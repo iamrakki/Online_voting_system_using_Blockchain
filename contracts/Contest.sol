@@ -19,10 +19,10 @@ contract Contest{
 
 	address admin;
 	mapping(uint => Contestant) public contestants; 
-   // mapping(address => bool) public voters;
+   
     mapping(address => Voter) public voters;
 	uint public contestantsCount;
-	// uint public counter;
+	
 	enum PHASE{reg, voting , done}
 	PHASE public state;
 
