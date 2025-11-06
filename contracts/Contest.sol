@@ -39,6 +39,7 @@ contract Contest{
 	constructor() public{ 
 		admin=msg.sender; 
         state=PHASE.reg; 
+		
 	} 
 
     function changeState(PHASE x) onlyAdmin public{ 
